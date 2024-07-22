@@ -1,19 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View,Image } from 'react-native';
+import React from 'react';
+import SplashScreen from './app/screens/SplashScreen';
+import NextScreen from './app/screens/NextScreen';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Hello Raghood</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return   <NextScreen/>
+  //<SplashScreen/> 
+  
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'red',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+ 
